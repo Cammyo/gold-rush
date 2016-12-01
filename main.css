@@ -1,0 +1,24 @@
+*{
+  margin:0;
+  padding:0;
+  box-styling: border-box;
+}
+
+.map{
+  height:100%;
+  width:100%;
+  position:relative;
+  z-index:0;
+}
+
+.marker{
+  position:absolute;
+  width:50px;
+  margin-left: -6px;
+  margin-top: -1.5px;
+}
+
+.marker img{
+  width:50px;
+}
+

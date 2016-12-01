@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="goldModule" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GOLD RUSH</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+  <script src="main.js"></script>
+
+  </head>
+  
+<body ng-controller="Gold as gold">
+  <div ng-click="gold.otherClick()">
+    <img ng-click="gold.goldClick($event)" src="topo-co.jpg" class="map">
+    
+      <div class="marker" ng-repeat="place in gold.coordinates" style="top:{{place.coordinateY}}px;left{{place.coordinatex}}px;">
+        <img src="http://24.media.tumblr.com/tumblr_memdwbvwdm1rx34gto1_500.png">
+      </div>
+    
+  </div>
+</body>
+</html>
