@@ -12,12 +12,17 @@ angular.module("goldModule", [])
   gold.goldClick = function(event) {
     
     gold.place = {
-      coordinateX : gold.clickX = (event.pageX),
-      coordinateY : gold.clickY = (event.pageY),
+      coordinateX : gold.clickX = (event.pageX - 25),
+      coordinateY : gold.clickY = (event.pageY - 25),
     }
     
     gold.coordinates.push(gold.place);
     console.log(gold.coordinates)
+    console.log(event)
+  }
+  
+  gold.goldRemove = function(index) {
+    gold.coordinates.splice(index, 1)
   }
   
 }

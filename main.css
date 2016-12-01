@@ -13,12 +13,15 @@
 
 .marker{
   position:absolute;
-  width:50px;
-  margin-left: -6px;
-  margin-top: -1.5px;
+  width:250px;
+  
 }
 
 .marker img{
   width:50px;
 }
 
+.txtbox{
+  height:20px;
+  width:100px;
+}
